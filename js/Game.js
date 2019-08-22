@@ -17,16 +17,16 @@ OregonH.ENEMY_GOLD_AVG = 50;
  
 OregonH.Game = {};
  
-//initiate the game
+// initiate the game
 OregonH.Game.init = function(){
  
-  //reference ui
+  // reference ui
   this.ui = OregonH.UI;
  
-  //reference event manager
+  // reference event manager
   this.eventManager = OregonH.Event;
  
-  //setup caravan
+  // setup caravan
   this.caravan = OregonH.Caravan;
   this.caravan.init({
     day: 0,
@@ -38,7 +38,7 @@ OregonH.Game.init = function(){
     firepower: 2
   });
  
-  //pass references
+  // pass references
   this.caravan.ui = this.ui;
   this.caravan.eventManager = this.eventManager;
  
@@ -50,7 +50,7 @@ OregonH.Game.init = function(){
   this.eventManager.caravan = this.caravan;
   this.eventManager.ui = this.ui;
  
-  //begin adventure!
+  // begin adventure!
   this.startJourney();
 };
  
