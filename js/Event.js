@@ -8,6 +8,13 @@ OregonH.Event.eventTypes = [
     notification: 'negative',
     stat: 'crew',
     value: -3,
+    text: 'Alien invasion. Your crew members were abducted by aliens'
+  }
+  {
+    type: 'STAT-CHANGE',
+    notification: 'negative',
+    stat: 'crew',
+    value: -3,
     text: 'Food intoxication. Casualties: '
   },
   {
